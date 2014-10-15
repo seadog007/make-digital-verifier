@@ -37,7 +37,7 @@ var sublist = ["DFHqWaGMAk2rT",
 
 
 for (var b = sublist.length - 1; b >= 0; b--) {
-  for (var i = 1; i <= 41; i++) {
+  for (var i = 1; i <= 50; i++) {
   var vol = i;
   var subid = sublist[b];
   //console.log(gfu(vol, subid));
@@ -80,7 +80,7 @@ function gfu(vol,subid) {
     var url = "http://www.make-digital.com/make/volume_" + vol + "/?sub_id=" + subid;
   }else{
     if(vol<10){
-      var url = "http://www.make-digital.com/make/volo" + vol + "/?sub_id=" + subid;
+      var url = "http://www.make-digital.com/make/vol0" + vol + "/?sub_id=" + subid;
     }else{
       var url = "http://www.make-digital.com/make/vol" + vol + "/?sub_id=" + subid;
     }
